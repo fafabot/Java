@@ -1,19 +1,15 @@
 package primeiroProjeto;
 
-import java.util.Scanner;
-
 public class teste {
 
 	public static void main(String[] args) {
-		        
-		        Scanner scanner = new Scanner(System.in);
+		// TODO Auto-generated method stub
+		String nome = "Maria";
+		int idade = 30;
+		double altura = 1.65;
 
-		     // 5 - Calculadora de área de círculo
-	            System.out.println("\nDigite em metros o raio do circulo: ");
-	            double raio = scanner.nextDouble();
-	            double raio2 = Math.pow(raio,2);
-	            double area = (3.14159/raio2);
-	            System.out.printf("A área do circulo é: %.2f",area,"m²");
-	            System.out.printf("A área do circulo é: %.2f",area,"m²");
-		    }
-		}
+		System.out.printf("Olá, %s. Você tem %d anos e %.2f metros de altura.", nome, idade, altura);
+		System.out.printf("\nFim do exemplo.");
+	}
+
+}

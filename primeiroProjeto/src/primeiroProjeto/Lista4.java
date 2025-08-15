@@ -78,10 +78,10 @@ public class Lista4 {
         System.out.print("Você é associado da loja? (sim/nao): ");
         String resposta = scanner.nextLine();
         
-        if (resposta.equalsIgnoreCase("sim")) {
-            System.out.println("Você tem desconto.");
-        } else {
+        if (resposta!="sim") {
             System.out.println("Você não tem desconto.");
+        } else {
+            System.out.println("Você tem desconto.");
         }
         
         //8 - Cálculo de bônus por horas extras
@@ -96,10 +96,6 @@ public class Lista4 {
         }
         
         System.out.printf("Bônus por hora extra: R$ %.2f%n", bonus);
-        
-        
-        
-
 	}
 
 }
