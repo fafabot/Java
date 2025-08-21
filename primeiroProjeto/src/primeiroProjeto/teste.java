@@ -1,15 +1,22 @@
 package primeiroProjeto;
 
+import java.util.Scanner;
+
 public class teste {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String nome = "Maria";
-		int idade = 30;
-		double altura = 1.65;
 
-		System.out.printf("Olá, %s. Você tem %d anos e %.2f metros de altura.", nome, idade, altura);
-		System.out.printf("\nFim do exemplo.");
+			Scanner	scanner = new Scanner(System.in);
+
+			System.out.print("Digite uma letra: ");
+	        char letra = scanner.next().toLowerCase().charAt(0);
+
+	        if (letra == 'a') {
+	            System.out.println("É uma vogal.");
+	        } else {
+	            System.out.println("Não é vogal.");
+	        }
 	}
 
 }
