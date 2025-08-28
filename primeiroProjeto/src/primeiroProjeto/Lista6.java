@@ -57,7 +57,6 @@ public class Lista6 {
 		System.out.println("------------------------------------------\n");
 		
 		// 5 - Triagem médica
-		System.out.println("\n--- Exercício 5: Triagem Médica ---");
 	    System.out.print("Qual sua temperatura corporal? (ex: 37.5) ");
 	    double temperatura = scanner.nextDouble();
 	    scanner.next();
@@ -146,3 +145,4 @@ public class Lista6 {
 	}
 
 }
+
