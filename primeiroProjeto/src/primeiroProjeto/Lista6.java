@@ -59,8 +59,6 @@ public class Lista6 {
 		// 5 - Triagem médica
 	    System.out.print("Qual sua temperatura corporal? (ex: 37.5) ");
 	    double temperatura = scanner.nextDouble();
-	    scanner.next();
-	        
 	    System.out.print("Você tem sintomas como tosse ou dor de cabeça? (sim/não) ");
 	    String temSintomas = scanner.next();
 	        
@@ -145,4 +143,5 @@ public class Lista6 {
 	}
 
 }
+
 
