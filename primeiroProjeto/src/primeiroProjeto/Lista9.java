@@ -69,7 +69,7 @@ public class Lista9 {
 		System.out.println("Você acertou a senha!");
 
 		// 7 - Contagem Regressiva
-		System.out.println("Digite um número: ");
+		System.out.println("Digite um número: '");
 		int numero5 = scanner.nextInt();;
 		while (numero5 >= 1) {
 			System.out.println(numero5);
