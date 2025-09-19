@@ -79,7 +79,5 @@ public class Lista14 {
                 System.out.println("Quase lá");
             }
         }
-
-        sc.close();
     }
 }
