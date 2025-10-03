@@ -1,6 +1,6 @@
 package primeiroProjeto;
 
-public class Lista16 {
+public class FuncaoSimples {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

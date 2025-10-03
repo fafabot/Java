@@ -106,7 +106,7 @@ public class Lista17 {
 				for (int i = 0; i < 4; i++) {
 				    for (int j = 0; j < 3; j++) {
 				        if (matriz5[i][j] > 10) {
-				            System.out.println("[" + i + "][" + j + "] = " + matriz5[i][j]);
+				            System.out.println("[" + i + "][" + j + "] = " + matriz5[i][j]);;;;;
 				        }
 				    }
 				}

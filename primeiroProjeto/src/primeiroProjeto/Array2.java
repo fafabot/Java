@@ -16,11 +16,34 @@ public class Array2 {
 		Scanner sc = new Scanner(System.in);
 		double[] salario = new double[3];
 		for(int i=0; i<salario.length; i++) {
-			System.out.print("salario "+i+":");
+			System.out.print("salario "+i+": ");
 			salario[i] = sc.nextDouble();
+		}
+		
+		System.out.println("Mostrando o vetor");
+		for(int i=0; i<3; i++) {
+			System.out.println("salario "+i+": "+salario[i]);
+		}
+		String[] avaliacao = new String[5];
+		for(int i=0; i<5; i++) {
+			System.out.println("Informe sua avaliação: ");
+			avaliacao[i] = sc.next();
+			if(avaliacao[i].equalsIgnoreCase("bom")) {
+				System.out.println("Obrigado");
+			} else {
+				System.out.println("Tchau");
+			}
 			
 		}
-
+		
+		int[] vetor = new int[3];
+		for(int i=0;i<3;i++) {
+			System.out.println("vetor["+i+"]: ");
+			vetor[i] = sc.nextInt();
+		}
+		for(int i=2;i>=0;i--) {
+			System.out.println("vetor"+i+"]: "+vetor[i]);
+		}
 	}
 
 }
