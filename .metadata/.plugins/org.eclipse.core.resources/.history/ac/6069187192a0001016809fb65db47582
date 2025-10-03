@@ -67,18 +67,21 @@ public class Lista19 {
         }
     }
 
-
-    // 8 – Saudação por turno (usando equalsIgnoreCase)
-		public static void saudacaoTurno(String turno) {
-			if (turno.equalsIgnoreCase("manhã")) {
-				System.out.println("Bom dia!");
-			} else if (turno.equalsIgnoreCase("tarde")) {
-				System.out.println("Boa tarde!");
-			} else if (turno.equalsIgnoreCase("noite")) {
-				System.out.println("Boa noite!");
-			} else {
-				System.out.println("Turno inválido!");
-			}
+    // 8 – Saudação por turno
+    public static void saudacaoTurno(String turno) {
+        switch (turno.toLowerCase()) {
+            case "manhã":
+                System.out.println("Bom dia!");
+                break;
+            case "tarde":
+                System.out.println("Boa tarde!");
+                break;
+            case "noite":
+                System.out.println("Boa noite!");
+                break;
+            default:
+                System.out.println("Turno inválido!");
+        }
     }
 
     // 9 – Calculando média
@@ -114,8 +117,9 @@ public class Lista19 {
         separador();
 
         // 3
+        sc.nextLine(); // limpar buffer do scanner
         System.out.print("Digite seu nome: ");
-        String nome = sc.next();
+        String nome = sc.nextLine();
         boasVindas(nome);
         separador();
 
@@ -126,10 +130,11 @@ public class Lista19 {
         separador();
 
         // 5
+        sc.nextLine(); // limpar buffer
         System.out.print("Digite a primeira palavra: ");
-        String p1 = sc.next();
+        String p1 = sc.nextLine();
         System.out.print("Digite a segunda palavra: ");
-        String p2 = sc.next();
+        String p2 = sc.nextLine();
         juntarPalavras(p1, p2);
         separador();
 
@@ -146,8 +151,9 @@ public class Lista19 {
         separador();
 
         // 8
+        sc.nextLine(); // limpar buffer
         System.out.print("Digite o turno (manhã, tarde ou noite): ");
-        String turno = sc.next();
+        String turno = sc.nextLine();
         saudacaoTurno(turno);
         separador();
 
@@ -166,5 +172,6 @@ public class Lista19 {
         double notaFinal = sc.nextDouble();
         verificarAprovacao(notaFinal);
 
+        sc.close();
     }
 }
