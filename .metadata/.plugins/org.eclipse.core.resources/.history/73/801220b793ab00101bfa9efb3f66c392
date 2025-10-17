@@ -43,6 +43,7 @@ public class Lista21 {
         linha();
         System.out.println("Classificação de idade: " + idade(61));
 
+        sc.close();
     }
 
     // Linha separadora
